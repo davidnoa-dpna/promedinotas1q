@@ -1,0 +1,29 @@
+"""
+EXAMEN QUIMESTRAL
+"""
+
+# Pedir datos del alumno
+print("---------------PROGRAMA PROMEDIO DE NOTAS-------------")
+nombre = input("Nombre del alumno: ")
+curso = input("Curso: ")
+materia = input("Materia: ")
+print("---------------INGRESO DE NOTAS-----------------------")
+
+p1 = float(input("Ingrese la nota del 1er. Parcial: "))
+p2 = float(input("Ingrese la nota del 2do. Parcial: "))
+examen = float(input("Ingrese la nota del Examen: "))
+
+# Hacer cálculos e imprimir resultados
+suma=(p1+p2)/2
+prom_parciales= suma * 0.80
+prom_examen=examen * 0.20
+
+promedio_final = prom_parciales+prom_examen
+
+print("-----------------RESULTADOS---------------------------")
+print(f"Promedio de notas parciales es: {prom_examen:.2f}")
+print(f"Promedio Examen quimestral: {prom_examen:.2f}")
+
+print(f"El promedio final del primer quimestre es: {promedio_final:.2f} ")
+print("-----------------FIN DEL PROGRAMA---------------------")
+
